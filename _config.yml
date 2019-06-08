@@ -5,8 +5,8 @@ description: Yutian Tang's blog
 highlighter: null
 permalink: /:title
 
-url: http://blog.chrisyttang.org
-baseurl: http://blog.chrisyttang.org
+url:
+baseurl:
 
 # Custom options:
 # color_scheme: azul|ruby|amber|avocado
