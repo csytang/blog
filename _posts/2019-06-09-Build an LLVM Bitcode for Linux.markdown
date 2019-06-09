@@ -38,7 +38,9 @@ The next step is to install LLVM, python;
 
  * Setup the system environment
  * Build the Linux
- >cd linux-stable make CC=wllvm defconfig make CC=wllvm -j64 2>&1 | tee build.log
+   1. cd linux-stable 
+   2. make CC=wllvm defconfig 
+   3. make CC=wllvm -j64 2>&1 | tee build.log
 
  With the above step, an exectuable `vmlinux` is generated
  * Extract the bitcode
