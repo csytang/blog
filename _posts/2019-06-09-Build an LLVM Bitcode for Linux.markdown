@@ -2,7 +2,7 @@
 layout: post
 title:  "Build an LLVM Bitcode for Linux"
 date:   2019-06-09 10:18:00 +0700
-categories: [LLVM]
+categories: [llvm]
 ---
 
 This post shows how to build an LLVM bitcode (namely .bc image ) for Linux;

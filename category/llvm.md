@@ -1,6 +1,6 @@
 ---
 layout: posts_by_category
-categories: ruby
-title: Ruby
+categories: llvm
+title: LLVM
 permalink: /category/ruby
 ---
