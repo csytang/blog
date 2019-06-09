@@ -18,7 +18,7 @@ This repository presents how to build an LLVM bitcode. Specifically, here, we fo
 
 Here, we demo how to download the v4.12-r5 linux source code with git
 
-```console
+```bash
 git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
 cd linux-stable
 git reset --hard v4.12-rc5
@@ -72,6 +72,23 @@ The next step is to install LLVM, python;
       produce bitcode.  Setting `WLLVM_CONFIGURE_ONLY` may prevent
       configuration errors caused by the unexpected production of hidden
       bitcode files. It is sometimes required when configuring a build.
+
+* Install Patches
+
+    Note that using LLVM to compile Linux directly will fail. Therefore, patches should be applied first. 
+
+    Please download patches from [clang-kernel-build](https://github.com/ssl-tud/k-miner/tree/master/clang-kernel-build).
+
+    ```bash
+    patch -p1 -i <path-to-clang-kerenl-build>/clang-flags.patch
+    patch -p1 -i <path-to-clang-kerenl-build>/clang-uaccess.patch
+    # boot-workaround-PR18415.patch has been copied here from LLVMLinux buildbot,
+    # which is currently down.
+    patch -p1 -i <path-to-clang-kerenl-build>/boot-workaround-PR18415.patch
+    patch -p1 -i <path-to-clang-kerenl-build>/llist.patch
+    ```
+
+    
 
  * Build the Linux
    1. cd linux-stable 
