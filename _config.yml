@@ -1,13 +1,57 @@
-title: Yutian Tang's blog
+title: Stack Problems
+description: Personal Blog
 author: Yutian Tang
-description: Yutian Tang's blog
+github: https://github.com/csytang
+about: I'm a research, a developer, and a ...
+disqus_shortname: csytang-blog
+google_analytics: 
+avatar_url: /static/img/avatar.jpg
 
-highlighter: null
-permalink: /:title
+enableTags: true
+tagarray: []
 
-url:
-baseurl:
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
 
-# Custom options:
-# color_scheme: azul|ruby|amber|avocado
-# color_scheme: avocado
+social:
+    - icon: fa-facebook
+      link: "#"
+    - icon: fa-twitter
+      link: "#"
+    - icon: fa-linkedin
+      link: "#"
+    - icon: fa-stack-exchange
+      link: "#"
+    - icon: fa-github
+      link: "https://github.com/csytang"
+
+share:
+  twitter_username: github.io
+  fb_appid: 
+
+urls:
+    - text: About Me
+      url: /about/
+    - text: My Projects
+      url: /projects/
+    - text: XML Feed
+      url: /feed.xml
+
+url: "https://www.chrisyttang.org"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']
