@@ -9,7 +9,7 @@ categories: [llvm]
 >https://dimjasevic.net/marko/2015/11/09/getting-llvm-bitcode-with-clang-from-android-take-ii/index.html
 
 1. Download the Whole Program LLVM tool (`wllvm`) from 
-   (https://github.com/travitch/whole-program-llvm)[https://github.com/travitch/whole-program-llvm]
+   [https://github.com/travitch/whole-program-llvm](https://github.com/travitch/whole-program-llvm)
 
 2. Add `wllvm`’s directory to the PATH_variable:
 
